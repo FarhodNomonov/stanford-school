@@ -1,0 +1,86 @@
+/* footer.css */
+
+/* Стиль для футера */
+footer {
+  background-color: #2d3748; /* Темный фон */
+  color: white; /* Белый текст */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Контейнер для всего футера, чтобы ограничить максимальную ширину */
+footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Используем Grid для размещения колонок */
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивное распределение колонок */
+  gap: 2rem;
+}
+
+/* Заголовки для каждого блока */
+footer h3, footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Ссылки и текст */
+footer a {
+  color: #edf2f7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #63b3ed;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+/* Стиль для соцсетей и иконок */
+footer .flex {
+  display: flex;
+  gap: 1rem; /* Расстояние между иконками */
+}
+
+footer .fab {
+  font-size: 1.5rem;
+  color: #edf2f7; /* Цвет иконок */
+  transition: color 0.3s ease;
+}
+
+footer .fab:hover {
+  color: #63b3ed; /* Цвет при наведении */
+}
+
+/* Стиль для нижнего текста с авторскими правами */
+footer .text-center {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+footer .text-gray-400 {
+  color: #a0aec0; /* Цвет для серого текста */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  footer .grid {
+    grid-template-columns: 1fr; /* На мобильных устройствах показываем одну колонку */
+  }
+}
+

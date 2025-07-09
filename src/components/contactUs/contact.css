@@ -1,0 +1,89 @@
+.contact-section {
+  background: url('/your-background.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: #2e3a87;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 80%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #00d1ff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #00d1ff;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 15px;
+  }
+
+  .form-container {
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-container p {
+    font-size: 0.9rem;
+  }
+
+  form input,
+  form textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  form button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
