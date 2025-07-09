@@ -10,6 +10,7 @@ import ServicesSection2 from "./components/ServicesSection/ServicesSection2";
 import TeachersSection from "./components/teachers/TeachersSection";
 import Footer from "./components/footer/Footer";
 import ContactSection from "./components/contactUs/ContactSection";
+// import MoreInfo from "./components/more-info/moreInfo";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Header />
         <Main />
         <About />
+        {/* <MoreInfo /> */}
         <Programs />
         <ServicesSection />
         <ServicesSection2 />

@@ -13,12 +13,12 @@ const About = () => {
           эффективным. Наши ученики изучают программирование, робототехнику и
           современные технологии.
         </p>
-        <button className="about-btn">Подробнее</button>
       </div>
       <div className="about-image">
         <img src={myImage} alt="Наша школа" />
       </div>
     </section>
+    
   );
 };
 

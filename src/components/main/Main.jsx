@@ -5,13 +5,17 @@ import "./main.css";
 const slides = [
   {
     id: 1,
-    text: "Welcome to your new neighborhood buy & sell",
+    text: "Добро пожаловать в частную школу Stanford — учимся с удовольствием!",
     img: "slide1.webp",
   },
-  { id: 2, text: "Find great deals on items near you", img: "slide2.webp" },
+  {
+    id: 2,
+    text: "Программирование, робототехника и творчество — с начальных классов",
+    img: "slide2.webp",
+  },
   {
     id: 3,
-    text: "Join a trusted community of buyers and sellers",
+    text: "Современное образование, забота о каждом ребёнке и опытные педагоги",
     img: "slide3.webp",
   },
 ];

@@ -1,5 +1,7 @@
 // ContactSection.jsx
-import React, { useState } from "react";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./contact.css";
 
 export default function ContactSection() {
@@ -30,51 +32,57 @@ export default function ContactSection() {
       const data = await response.json();
 
       if (data.ok) {
-        alert("Сообщение отправлено!");
+        toast.success("Сообщение отправлено!");
         setForm({ name: "", email: "", message: "" });
       } else {
-        alert("Ошибка при отправке. Попробуйте позже.");
+        toast.error("❌ Ошибка при отправке. Попробуйте позже.");
       }
     } catch (error) {
-      alert("Ошибка сети. Проверьте подключение.");
+      toast.error("📡 Ошибка сети. Проверьте подключение.");
     }
   };
 
   return (
-    <section className="contact-section" id="contact">
-      <div className="form-container">
-        <h2>Contact Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
-        </p>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={form.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Mail"
-            value={form.email}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            value={form.message}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">SUBMIT ➤</button>
-        </form>
-      </div>
-    </section>
+  <>
+  <section className="contact-section" id="contact">
+    <div className="form-container">
+      <h2>Свяжитесь с нами</h2>
+      <p>
+        Остались вопросы? Хотите записать ребёнка или узнать подробнее о наших программах?
+        Оставьте заявку — мы свяжемся с вами в ближайшее время!
+      </p>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Ваше имя"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Ваш email"
+          value={form.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Ваше сообщение"
+          value={form.message}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Отправить ➤</button>
+      </form>
+    </div>
+  </section>
+
+  {/* Контейнер для тостов */}
+  <ToastContainer position="top-center" autoClose={3000} />
+</>
+
   );
 }

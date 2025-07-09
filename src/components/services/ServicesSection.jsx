@@ -1,25 +1,26 @@
 import React from "react";
-import kidImg from "../../assets/images/coding.jpeg"; // замени на путь к своему изображению
+import kidImg from "../../assets/images/coding.jpeg"; // путь к твоему изображению
 import "./services.css";
 
 const ServicesSection = () => {
   return (
     <section className="services-section">
       <div className="services-image">
-        <img src={kidImg} alt="Happy child" />
+        <img src={kidImg} alt="Ребёнок на занятии" />
       </div>
       <div className="services-text">
-        <h4>Our Locations</h4>
+        <h4>О нашей школе</h4>
         <h2>
-          State-of-the-art <br />
-          Environment Built for Fun
+          Современная среда <br />
+          для обучения и вдохновения
         </h2>
         <p>
-          NY Kids Club is NYC’s premier space for families throughout early
-          childhood. We offer immersive learning through classes, camps,
-          birthday parties and more. With custom-built locations, we provide a
-          nurturing and age-appropriate environment to foster fun, connection,
-          and lifelong growth.
+          Stanford School — это частная школа нового поколения, где обучение
+          становится увлекательным путешествием. Мы создаём комфортную и
+          технологичную среду, в которой дети развиваются, изучают английский
+          язык, программирование, а также учатся работать в команде и мыслить
+          креативно. У нас каждый ребёнок чувствует себя уверенно и
+          раскрывает свой потенциал.
         </p>
       </div>
     </section>

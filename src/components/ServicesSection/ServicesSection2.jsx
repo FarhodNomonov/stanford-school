@@ -3,36 +3,36 @@ import "./serviceSections.css";
 
 const services = [
   {
-    age: "0–13 Months",
-    title: "Infant & Baby",
+    age: "2–5 лет",
+    title: "Детский сад и подготовка к школе",
     description:
-      "Give them the best start in life with parent/child classes that explore the senses and support visual and auditory development.",
-    color: "#FFEBD9",
-    buttonColor: "#FC9400",
+      "Развиваем речь, мышление и социальные навыки с помощью игр, творчества и заботы опытных педагогов.",
+    color: "#FFF4DC",
+    buttonColor: "#F4B400",
   },
   {
-    age: "14–36 Months",
-    title: "Toddler",
+    age: "1–4 классы",
+    title: "Начальное образование + английский",
     description:
-      "Support growth, build self-esteem and encourage communication skills with classes that build strength through play.",
-    color: "#ECF8EC",
-    buttonColor: "#82B366",
+      "Совмещаем базовые школьные предметы с ранним изучением английского языка и интерактивными занятиями.",
+    color: "#E3F2FD",
+    buttonColor: "#42A5F5",
   },
   {
-    age: "2–4 Years",
-    title: "Preschool",
+    age: "5–7 классы",
+    title: "IELTS и IT с 5 класса",
     description:
-      "Let your little learners develop problem-solving skills through interactive games, play and music.",
-    color: "#E5F6E0",
-    buttonColor: "#49B649",
+      "Начинаем подготовку к международному экзамену IELTS и изучаем основы программирования и цифровых технологий.",
+    color: "#E8F5E9",
+    buttonColor: "#66BB6A",
   },
   {
-    age: "5+ Years",
-    title: "And Beyond",
+    age: "8–9 классы",
+    title: "Углублённое обучение и проекты",
     description:
-      "Teaches kids the skills they'll need to start Preschool and Kindergarten — with plenty of time for play and creativity.",
-    color: "#F6E6F6",
-    buttonColor: "#A259C5",
+      "Развиваем критическое мышление, IT-навыки, медиа-грамотность и участвуем в образовательных хакатонах и проектах.",
+    color: "#F3E5F5",
+    buttonColor: "#AB47BC",
   },
 ];
 
@@ -51,8 +51,14 @@ export default function ServicesSection() {
           <button
             className="learn-more"
             style={{ backgroundColor: item.buttonColor }}
+            onClick={() => {
+              const section = document.getElementById("contact");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
-            Learn More
+            Узнать больше
           </button>
         </div>
       ))}
