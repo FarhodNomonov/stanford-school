@@ -62,7 +62,7 @@ const TeachersSection = () => {
       id="teachers"
     >
       <h2 className="text-3xl font-semibold text-center mb-8">
-        Meet Our Teachers
+        Познакомьтесь с нашими учителями
       </h2>
       <motion.div
         initial={{ opacity: 0 }}
