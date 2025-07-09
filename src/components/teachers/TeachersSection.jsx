@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./teachersSection.css";
+import farkhodImg from "../../assets/teachers/farkhod.jpg"; // Adjust the path as necessary
 
 const settings = {
   dots: true,
@@ -31,30 +32,26 @@ const settings = {
 
 const teachers = [
   {
-    name: "Umarova Ivilina",
-    role: "UI/UX Designer",
+    name: "Малохат Хаҷибаева",
+    role: "Преподаватель русского языка",
     description:
-      "Alice has a passion for creating beautiful and functional user interfaces.",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "Более 7 лет опыта преподавания. Сотни довольных учеников, уровень — C2, готовит к ЕГЭ и международным экзаменам.",
+    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
   },
-
   {
-    name: "Xajibayeva Malohat",
-    role: "Russian teacher",
+    name: "Номонов Фарход",
+    role: "Преподаватель по IT",
     description:
-      "Jane has a deep understanding of databases and server-side development.",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "Frontend-разработчик с более чем 5-летним опытом. Преподаёт IT-дисциплины и владеет русским и английским языками. Профессионал в области цифровых технологий и современного образования.",
+
+    image: farkhodImg,
   },
-
   {
-    name: "Isakova Ruhsora",
-    role: "Full-stack Developer",
+    name: "Ивилина Умарова",
+    role: "Педагог дошкольного образования",
     description:
-      "Bob is experienced in both front and back-end technologies, including Node.js and React.",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "Создаёт добрую и тёплую атмосферу для малышей. Развивает логическое мышление, речь и любовь к обучению с раннего возраста.",
+    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
   },
 ];
 
